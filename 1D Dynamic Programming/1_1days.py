@@ -5,9 +5,9 @@ def climbstair(n):
     one = 1
     two = 2
 
-    for i in range(3,i+1):
+    for i in range(3,n+1):
         cur = one + two
-        two = one
-        one = cur
+        one = two
+        two = cur
 
-    return one
+    return two
