@@ -3,12 +3,12 @@
 # ✅ "1-indexed"
 # → Two Pointer!
 
-def twosum(nums,target):
+def twosum(num,target):
     left = 0
-    right = len(nums) - 1
+    right = len(num) - 1
 
     while left < right :
-        total = nums[left] + nums[right]
+        total = num[left] + num[right]
 
         if total > target:
             right -= 1
